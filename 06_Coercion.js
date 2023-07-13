@@ -36,18 +36,40 @@ typeof b;
 
 // COERCION EXPLICITA
 
-//Ejemplos de Coerción:
-
-var a = 4 + "7"; //Convierte a 4 en un string y lo concatena con el "7", por esto regresa un string de valor "47"
-
-4 * "7"; //Convierte al "7" en un número y realiza la operación, por esto devuelve 28
+//Ejemplos de Coerción explicita:
 
 var a = 20;
-var b = a + ""; //Aquí concatenamos para convertir la variable a string (coerción implícita)
-console.log(b); 
+var b = a + "";
+// En esta línea, se realiza una concatenación entre la variable a y una cadena vacía ("").
+// Esto causa una coerción implícita del número a en una cadena, ya que el operador + se comporta como concatenación cuando uno de los operandos es una cadena.
+// El resultado es una cadena que contiene el valor de a convertido a texto.
 
-var c = String(a); //Aquí obligamos a la variable a convertirse en string (coerción explícita)
+console.log(b);
+// Imprime el valor de b en la consola, que es "20".
+// Como resultado de la concatenación, b es una cadena.
+
+typeof b;
+// La función typeof se utiliza para obtener el tipo de dato de una variable o expresión.
+// En este caso, se está obteniendo el tipo de dato de la variable b.
+// Dado que b contiene la cadena "20", el resultado de typeof b será "string", que indica que b es una cadena de texto.
+
+var c = String(a);
+// En esta línea, se utiliza la función String() para realizar una coerción explícita del número a en una cadena.
+// La función String() convierte cualquier valor en su representación de cadena.
+
 console.log(c);
+// Imprime el valor de c en la consola, que también es "20".
+// Debido a la coerción explícita, c es una cadena.
 
-var d = Number(c); //Aquí obligamos a la variable a convertirse en número (coerción explícita)
-console.log(d);
+typeof c;
+// Obtiene el tipo de dato de c, que es una cadena de texto ("string").
+
+typeof a;
+// Obtiene el tipo de dato de a, que es un número ("number").
+
+var d = Number(c);
+// En esta línea, se utiliza la función Number() para realizar una coerción explícita de la cadena c en un número.
+// Si la cadena representa un número válido, la función Number() devuelve ese número.
+
+typeof d;
+// Obtiene el tipo de dato de d, que es un número ("number").
