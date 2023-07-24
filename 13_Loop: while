@@ -1,0 +1,35 @@
+//Ejempló 1
+var estudiantes = ["Maria", "Sergio", "Rosa", "Daniel"];
+
+function saludarEstudiantes(estudiante) {
+    console.log(`Hola, ${estudiante}`);
+}
+
+while (estudiantes.length > 0) {
+    // Utilizamos el método shift() para obtener el primer elemento del array estudiantes.
+    // El método shift() también elimina el primer elemento del array.
+    var estudiante = estudiantes.shift();
+
+    // Llamamos a la función saludarEstudiantes pasando como argumento el estudiante obtenido con shift().
+    saludarEstudiantes(estudiante);
+}
+
+
+//Ejempló 2
+var estudiantes = ["Maria", "Sergio", "Rosa", "Daniel"];
+
+function saludarEstudiantes(estudiante) {
+    console.log(`Hola, ${estudiante}`);
+}
+
+while (estudiantes.length > 0) {
+    // Imprimimos el array estudiantes en cada iteración para verificar su contenido.
+    console.log(estudiantes);
+
+    // Utilizamos el método shift() para obtener el primer elemento del array estudiantes.
+    // El método shift() también elimina el primer elemento del array.
+    var estudiante = estudiantes.shift();
+
+    // Llamamos a la función saludarEstudiantes pasando como argumento el estudiante obtenido con shift().
+    saludarEstudiantes(estudiante);
+}
