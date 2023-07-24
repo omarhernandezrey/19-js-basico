@@ -13,14 +13,14 @@ for (var i = 0; i < estudiantes.length; i++) { // Iniciamos un bucle 'for' que r
 
 //Ejemplo:2
 
-var estudiantes = ["Maria", "Sergio", "Rosa", "Daniel"];
+var estudiantes = ["Maria", "Sergio", "Rosa", "Daniel"]; // Creamos un array llamado 'estudiantes' con cuatro elementos (nombres).
 
-function saludarEstudiantes(estudiante) {
-    console.log(`hola, ${estudiante}`);
+function saludarEstudiantes(estudiante) { // Declaramos una función llamada 'saludarEstudiantes' que recibe un parámetro 'estudiante'.
+    console.log(`hola, ${estudiante}`); // Imprimimos un mensaje de saludo que incluye el nombre del estudiante recibido como parámetro.
 }
 
-for (var estudiante of estudiantes) {
-    saludarEstudiantes(estudiante)
+for (var estudiante of estudiantes) { // Iniciamos un bucle 'for...of' que recorrerá cada elemento del array 'estudiantes'.
+    saludarEstudiantes(estudiante); // En cada iteración del bucle, llamamos a la función 'saludarEstudiantes' pasando como argumento el valor del elemento en la iteración actual.
 }
 
 //Mas Ejemplos:
