@@ -52,3 +52,4 @@ for (var i = 0; i < 30; i++) {
 
 // Imprimimos el array 'autos' que contiene los 30 objetos creados.
 console.log(autos);
+
